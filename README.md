@@ -20,13 +20,11 @@ To run this project locally:
 
 # Clone the repository:
 
-bash
-Copy code
+
 git clone https://github.com/yourusername/chemical-inventory-app.git
 Navigate to the project folder:
 
-bash
-Copy code
+
 cd chemical-inventory-app
 Open the index.html file in your browser:
 

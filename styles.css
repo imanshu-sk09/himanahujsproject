@@ -1,0 +1,37 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    background-color: #f9f9f9;
+}
+
+/* Container Styles */
+.max-w-7xl {
+    max-width: 1200px; /* Set a max width for the container */
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, th, td {
+    border: 1px solid #ddd;
+}
+
+th, td {
+    padding: 12px;
+    text-align: left;
+}
+
+tr:hover {
+    background-color: #f1f1f1; /* Light gray on row hover */
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    /* Adjustments for smaller screens can be added here */
+}

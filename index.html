@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chemical Inventory</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+</head>
+<body class="bg-gray-50 p-8">
+    <div class="max-w-7xl mx-auto">
+        <div class="flex justify-between items-center mb-4">
+            <h1 class="text-2xl font-sens">Chemical Supplies</h1>
+            <div class="flex space-x-2">
+                <button onclick="addRow()" class="text-blue-500 text-lg"><i class="fas fa-plus-circle"></i></button>
+                <button onclick="moveRowUp()" class="text-gray-500 text-lg"><i class="fas fa-arrow-up"></i></button>
+                <button onclick="moveRowDown()" class="text-gray-500 text-lg"><i class="fas fa-arrow-down"></i></button>
+                <button onclick="deleteRow()" class="text-red-500 text-lg"><i class="fas fa-trash"></i></button>
+                <button onclick="saveData()" class="text-blue-500 text-lg"><i class="fas fa-save"></i></button>
+            </div>
+        </div>
+        <table class="min-w-full bg-white border border-gray-200">
+            <thead>
+                <tr class="bg-gray-100">
+                    <th class="border border-gray-200 p-2"></th>
+                    <th onclick="sortTable(1)" class="border border-gray-200 p-2 cursor-pointer">Chemical Name</th>
+                    <th onclick="sortTable(2)" class="border border-gray-200 p-2 cursor-pointer">Vendor</th>
+                    <th onclick="sortTable(3)" class="border border-gray-200 p-2 cursor-pointer">Density<br>g/m³</th>
+                    <th onclick="sortTable(4)" class="border border-gray-200 p-2 cursor-pointer">Viscosity<br>m²/s</th>
+                    <th onclick="sortTable(5)" class="border border-gray-200 p-2 cursor-pointer">Packaging</th>
+                    <th onclick="sortTable(6)" class="border border-gray-200 p-2 cursor-pointer">Pack Size</th>
+                    <th onclick="sortTable(7)" class="border border-gray-200 p-2 cursor-pointer">Unit</th>
+                    <th onclick="sortTable(8)" class="border border-gray-200 p-2 cursor-pointer">Quantity</th>
+                </tr>
+            </thead>
+            <tbody id="chemicalTableBody">
+                <!-- Rows will be populated here dynamically -->
+            </tbody>
+        </table>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

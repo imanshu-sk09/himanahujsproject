@@ -33,9 +33,6 @@ open index.html
 For a local development server, you can use the Live Server extension in VSCode or any other static server like http-server:
 
 
-npm install -g http-server
-http-server
-Access the application at http://localhost:8080 (or whichever port is shown).
 
 
 Add New Chemicals
